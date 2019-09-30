@@ -21,4 +21,8 @@
     <string name="inputkan_alamat_web">Inputkan alamat web</string>
     <string name="url_wajib_diisi">URL Wajib diisi</string>
     <string name="open_web">Open Web</string>
+    <string name="contact">Contact</string>
+    <string name="dial_phone">Dial Phone</string>
+    <string name="make_a_call">Make a Call</string>
+    <string name="inputkan_no_hp">Inputkan No Hp</string>
 </resources>
