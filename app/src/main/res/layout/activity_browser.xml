@@ -1,9 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.BrowserActivity">
+    android:orientation="vertical"
+    tools:context=".activity.SmsActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/edt_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/inputkan_alamat_web"
+        android:autofillHints="@string/inputkan_alamat_web"
+        android:layout_margin="@dimen/activity_default_margin"
+        android:inputType="textUri" />
+
+    <Button
+        android:id="@+id/btn_open_browser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/open_browser"
+        android:layout_marginStart="@dimen/activity_default_margin"
+        android:layout_marginEnd="@dimen/activity_default_margin"/>
+
+    <Button
+        android:id="@+id/btn_open_web"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/open_web"
+        android:layout_marginStart="@dimen/activity_default_margin"
+        android:layout_marginEnd="@dimen/activity_default_margin"/>
+
+    <WebView
+        android:id="@+id/wv_url"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/activity_default_margin"/>
+
+</LinearLayout>

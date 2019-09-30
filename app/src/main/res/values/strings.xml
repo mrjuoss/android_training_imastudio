@@ -17,4 +17,8 @@
     <string name="message">Message</string>
     <string name="send">Send</string>
     <string name="reset">Reset</string>
+    <string name="open_browser">Open Browser</string>
+    <string name="inputkan_alamat_web">Inputkan alamat web</string>
+    <string name="url_wajib_diisi">URL Wajib diisi</string>
+    <string name="open_web">Open Web</string>
 </resources>
