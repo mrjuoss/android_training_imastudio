@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.EmailActivity">
+
+    <EditText
+        android:id="@+id/edt_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email"
+        android:autofillHints="@string/email"
+        android:layout_margin="@dimen/activity_default_margin"/>
+
+    <EditText
+        android:id="@+id/edt_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailSubject"
+        android:hint="@string/subject"
+        android:autofillHints="@string/subject"
+        android:layout_marginStart="@dimen/activity_default_margin"
+        android:layout_marginEnd="@dimen/activity_default_margin"/>
+
+    <EditText
+        android:id="@+id/edt_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/activity_default_margin"
+        android:layout_marginTop="@dimen/activity_default_margin"
+        android:layout_marginEnd="@dimen/activity_default_margin"
+        android:autofillHints="@string/message"
+        android:gravity="top"
+        android:hint="@string/message"
+        android:inputType="textLongMessage|textMultiLine" />
+
+</LinearLayout>

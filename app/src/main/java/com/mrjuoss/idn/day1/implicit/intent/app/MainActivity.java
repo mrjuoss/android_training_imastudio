@@ -1,11 +1,21 @@
 package com.mrjuoss.idn.day1.implicit.intent.app;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.mrjuoss.idn.day1.implicit.intent.app.activity.AudioRecorderActivity;
+import com.mrjuoss.idn.day1.implicit.intent.app.activity.BrowserActivity;
+import com.mrjuoss.idn.day1.implicit.intent.app.activity.CallPhoneActivity;
+import com.mrjuoss.idn.day1.implicit.intent.app.activity.CameraActivity;
+import com.mrjuoss.idn.day1.implicit.intent.app.activity.EmailActivity;
+import com.mrjuoss.idn.day1.implicit.intent.app.activity.SmsActivity;
+import com.mrjuoss.idn.day1.implicit.intent.app.activity.TtsActivity;
+import com.mrjuoss.idn.day1.implicit.intent.app.activity.VideoActivity;
+import com.mrjuoss.idn.day1.implicit.intent.app.activity.WifiActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -43,22 +53,40 @@ public class MainActivity extends AppCompatActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btn_tts:
+                startActivity(new Intent(this, TtsActivity.class));
+
                 break;
             case R.id.btn_email:
+                startActivity(new Intent(this, EmailActivity.class));
+
                 break;
             case R.id.btn_call_phone:
+                startActivity(new Intent(this, CallPhoneActivity.class));
+
                 break;
             case R.id.btn_browser:
+                startActivity(new Intent(this, BrowserActivity.class));
+
                 break;
             case R.id.btn_camera:
+                startActivity(new Intent(this, CameraActivity.class));
+
                 break;
             case R.id.btn_video:
+                startActivity(new Intent(this, VideoActivity.class));
+
                 break;
             case R.id.btn_sms:
+                startActivity(new Intent(this, SmsActivity.class));
+
                 break;
             case R.id.btn_audio_recorder:
+                startActivity(new Intent(this, AudioRecorderActivity.class));
+
                 break;
             case R.id.btn_wifi:
+                startActivity(new Intent(this, WifiActivity.class));
+
                 break;
         }
     }

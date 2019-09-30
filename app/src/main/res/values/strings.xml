@@ -9,4 +9,12 @@
     <string name="audio_recorder">Audio Recorder</string>
     <string name="wifi">Wifi</string>
     <string name="text_to_speech">Text to Speech</string>
+    <string name="take_picture">Take Picture</string>
+    <string name="show_picture">Show Picture</string>
+    <string name="picture">Picture</string>
+    <string name="share">Share</string>
+    <string name="subject">Subject</string>
+    <string name="message">Message</string>
+    <string name="send">Send</string>
+    <string name="reset">Reset</string>
 </resources>

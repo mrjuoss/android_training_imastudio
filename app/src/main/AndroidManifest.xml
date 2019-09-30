@@ -2,17 +2,30 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mrjuoss.idn.day1.implicit.intent.app">
 
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
+        android:fullBackupContent="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activity.WifiActivity"></activity>
+        <activity android:name=".activity.AudioRecorderActivity" />
+        <activity android:name=".activity.SmsActivity" />
+        <activity android:name=".activity.VideoActivity" />
+        <activity android:name=".activity.CameraActivity" />
+        <activity android:name=".activity.BrowserActivity" />
+        <activity android:name=".activity.CallPhoneActivity" />
+        <activity android:name=".activity.EmailActivity" />
+        <activity android:name=".activity.TtsActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
+                <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
