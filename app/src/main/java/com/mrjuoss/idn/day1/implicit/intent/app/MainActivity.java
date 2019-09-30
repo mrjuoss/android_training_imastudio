@@ -7,78 +7,58 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 
+public class MainActivity extends AppCompatActivity {
+    @BindView(R.id.btn_tts)
     Button btnTts;
+    @BindView(R.id.btn_email)
     Button btnEmail;
+    @BindView(R.id.btn_call_phone)
     Button btnCallPhone;
+    @BindView(R.id.btn_browser)
     Button btnBrowser;
+    @BindView(R.id.btn_camera)
     Button btnCamera;
+    @BindView(R.id.btn_video)
     Button btnVideo;
+    @BindView(R.id.btn_sms)
     Button btnSms;
+    @BindView(R.id.btn_audio_recorder)
     Button btnAudioRecorder;
+    @BindView(R.id.btn_wifi)
     Button btnWifi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        initComponent();
+        ButterKnife.bind(this);
 
     }
 
-    private void initComponent() {
-        btnTts = findViewById(R.id.btn_tts);
-        btnEmail = findViewById(R.id.btn_email);
-        btnCallPhone = findViewById(R.id.btn_call_phone);
-        btnBrowser = findViewById(R.id.btn_browser);
-        btnCamera = findViewById(R.id.btn_camera);
-        btnVideo = findViewById(R.id.btn_video);
-        btnSms = findViewById(R.id.btn_sms);
-        btnAudioRecorder = findViewById(R.id.btn_audio_recorder);
-        btnWifi = findViewById(R.id.btn_wifi);
-
-        btnTts.setOnClickListener(this);
-        btnEmail.setOnClickListener(this);
-        btnCallPhone.setOnClickListener(this);
-        btnBrowser.setOnClickListener(this);
-        btnCamera.setOnClickListener(this);
-        btnVideo.setOnClickListener(this);
-        btnSms.setOnClickListener(this);
-        btnAudioRecorder.setOnClickListener(this);
-        btnWifi.setOnClickListener(this);
-    }
-
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
+    @OnClick({R.id.btn_tts, R.id.btn_email, R.id.btn_call_phone, R.id.btn_browser, R.id.btn_camera, R.id.btn_video, R.id.btn_sms, R.id.btn_audio_recorder, R.id.btn_wifi})
+    public void onViewClicked(View view) {
+        switch (view.getId()) {
             case R.id.btn_tts:
-                Toast.makeText(this, "TTS Button Click", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btn_email:
-                Toast.makeText(this, "Email Button Click", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btn_call_phone:
-                Toast.makeText(this, "Call Phone Button Click", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btn_browser:
-                Toast.makeText(this, "Browser Button Click", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btn_camera:
-                Toast.makeText(this, "Camera Button Click", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btn_video:
-                Toast.makeText(this, "Video Button Click", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btn_sms:
-                Toast.makeText(this, "SMS Button Click", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btn_audio_recorder:
-                Toast.makeText(this, "Audio Recorder Button Click", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btn_wifi:
-                Toast.makeText(this, "Wifi Button Click", Toast.LENGTH_SHORT).show();
                 break;
         }
     }
