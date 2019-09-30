@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">01 Implicit Intent App</string>
+    <string name="email">Email</string>
+    <string name="call_phone">Call Phone</string>
+    <string name="browser">Browser</string>
+    <string name="camera">Camera</string>
+    <string name="video">Video</string>
+    <string name="sms">SMS</string>
+    <string name="audio_recorder">Audio Recorder</string>
+    <string name="wifi">Wifi</string>
+    <string name="text_to_speech">Text to Speech</string>
+</resources>
